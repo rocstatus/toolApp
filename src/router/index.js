@@ -7,15 +7,19 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    name: 'index',
+    component: resolve => require(['../page/index.vue'], resolve)
+  },
+  {
+    path: '/login',
     name: 'login',
     component: resolve => require(['../page/login.vue'], resolve)
-
   },
-  // {
-  //   path: '/userLine',
-  //   name: 'userLine',
-  //   component: () => import('../page/login/userLine')
-  // },
+  {
+    path: '/sql',
+    name: 'sql',
+    component: resolve => require(['../page/sql.vue'], resolve)
+  },
   // {
   //   path: '/notice',
   //   name: 'notice',
