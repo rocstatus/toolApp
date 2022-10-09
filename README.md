@@ -6,13 +6,8 @@
 
 
 ### 使用方法：
-
-
 ``` bash
-npm install --save sql-formatter
-npm install --save vue-codemirror 
-
-下载node_model文件：npm install
+下载node_model文件：cnpm install
 
 # 本地运行项目
 npm run dev
